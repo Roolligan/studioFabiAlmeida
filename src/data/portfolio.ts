@@ -8,24 +8,7 @@ import noiva4 from '../assets/portfolio/noiva4.png'
 import social1 from '../assets/portfolio/social1.png'
 import social2 from '../assets/portfolio/social2.png'
 
-const createPlaceholder = (label: string) => {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" width="600" height="420">
-      <defs>
-        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#f9f4ef" />
-          <stop offset="100%" stop-color="#e8dccc" />
-        </linearGradient>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#g)" />
-      <circle cx="520" cy="80" r="70" fill="#f1e7db" />
-      <circle cx="90" cy="330" r="60" fill="#efe1d1" />
-      <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial" font-size="28" fill="#9a8371">${label}</text>
-    </svg>
-  `;
 
-  return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
-};
 
 export const portfolioItems = [
   {
