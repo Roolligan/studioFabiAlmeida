@@ -159,6 +159,7 @@ main {
   backdrop-filter: blur(10px);
   background: rgba(250, 246, 241, 0.75);
   border-bottom: 1px solid rgba(200, 180, 160, 0.35);
+  padding: 0;
 }
 
 .header-inner {
@@ -166,18 +167,23 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  padding: 18px 24px;
+  padding: 12px 24px;
   max-width: 1200px;
   margin: 0 auto;
+}
+.header .btn{
+  padding: 10px 18px;
+  line-height: 1;
 }
 
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
   text-decoration:none;
   color:inherit;
   min-width: 220px; /* ajuda a manter a nav alinhada */
+  line-height: 1;
 }
 
 .brand-logo{
@@ -200,10 +206,11 @@ main {
   .brand{
     min-width: auto;
     gap:10px;
+    height: 54px;
   }
   .brand-logo{
-    height:106px;
-    
+    height:116px;
+        
   }
   .brand-name{
     font-size: 1rem;
@@ -213,7 +220,7 @@ main {
 
 .nav {
   display: flex;
-  gap: 18px;
+  gap: 12px 18px;
   font-size: 0.85rem;
   color: var(--muted);
 }
