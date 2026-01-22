@@ -118,7 +118,7 @@ main {
   gap: 10px;
   padding: 14px 24px;
   border-radius: 999px;
-  font-weight: 600;
+  font-weight: 500;
   border: 1px solid transparent;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -165,23 +165,56 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   padding: 18px 24px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.brand {
-  font-family: "Playfair Display", "Times New Roman", serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:inherit;
+  min-width: 220px; /* ajuda a manter a nav alinhada */
 }
+
+.brand-logo{
+  height:134px;
+  width:auto;
+  display:block;
+  object-fit:contain;
+}
+
+.brand-name{
+  font-family: var(--font-heading, inherit);
+  letter-spacing: .02em;
+  font-size: 1.05rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Mobile: deixa mais compacto */
+@media (max-width: 720px){
+  .brand{
+    min-width: auto;
+    gap:10px;
+  }
+  .brand-logo{
+    height:106px;
+    
+  }
+  .brand-name{
+    font-size: 1rem;
+  }
+}
+
 
 .nav {
   display: flex;
   gap: 18px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: var(--muted);
 }
 
@@ -206,7 +239,7 @@ main {
 }
 
 .hero {
-  padding: 90px 24px 0;
+  padding: 50px 24px 0;
 }
 
 .hero-grid {
@@ -218,7 +251,7 @@ main {
 
 .hero h1 {
   font-family: "Playfair Display", "Times New Roman", serif;
-  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  font-size: clamp(2.0rem, 4vw, 3.6rem);
   line-height: 1.1;
   margin-bottom: 16px;
 }

@@ -1,4 +1,5 @@
 ﻿import type { ReactNode } from "react";
+import logo from '../brand/logo-fabi.png'
 
 interface HeaderProps {
   whatsappUrl: string;
@@ -20,9 +21,15 @@ function Header({ whatsappUrl }: HeaderProps): ReactNode {
   return (
     <header className="header">
       <div className="header-inner">
-        <a className="brand" href="#inicio">
-          Studio Fabi Almeida
+        <a className="brand" href="#inicio" aria-label="Studio Fabi Almeida (voltar ao início)">
+          <img
+            className="brand-logo"
+            src={logo}
+            alt="Logo Studio Fabi Almeida"
+          />
+          
         </a>
+
         <nav className="nav" aria-label="Navegação principal">
           {navItems.map((item) => (
             <a key={item.href} href={item.href}>
@@ -30,6 +37,7 @@ function Header({ whatsappUrl }: HeaderProps): ReactNode {
             </a>
           ))}
         </nav>
+
         <a className="btn outline" href={whatsappUrl} target="_blank" rel="noreferrer">
           Consultar no WhatsApp
         </a>
@@ -39,3 +47,4 @@ function Header({ whatsappUrl }: HeaderProps): ReactNode {
 }
 
 export default Header;
+
