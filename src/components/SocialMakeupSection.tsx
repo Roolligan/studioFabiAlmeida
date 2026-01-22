@@ -19,7 +19,7 @@ function SocialMakeupSection({ whatsappUrl }: SocialMakeupSectionProps) {
         </div>
         <div className="card">
           <div className="price-list">
-            <p>Maquiagem social: <strong>a partir de R$ 150</strong></p>
+            <p>Maquiagem social: <strong>a partir de R$ 160</strong></p>
           </div>
           <a className="btn primary" href={whatsappUrl} target="_blank" rel="noreferrer">
             Agendar pelo WhatsApp

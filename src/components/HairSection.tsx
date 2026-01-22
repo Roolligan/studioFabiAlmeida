@@ -19,7 +19,7 @@ function HairSection({ whatsappUrl }: HairSectionProps) {
         </div>
         <div className="card">
           <div className="price-list">
-            <p>Babyliss: <strong>a partir de R$ 120</strong></p>
+            <p>Babyliss: <strong>a partir de R$ 200</strong></p>
           </div>
           <a className="btn primary" href={whatsappUrl} target="_blank" rel="noreferrer">
             Agendar pelo WhatsApp

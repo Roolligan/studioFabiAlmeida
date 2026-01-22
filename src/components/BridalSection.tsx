@@ -24,8 +24,8 @@ function BridalSection({ whatsappUrl }: BridalSectionProps) {
             <li>• Duração pensada para cerimônia longa e festa.</li>
           </ul>
           <div className="price-list">
-            <p>Maquiagem de noiva: <strong>a partir de R$ 280</strong></p>
-            <p>Prévia de noiva: <strong>a partir de R$ 150</strong></p>
+            <p>Maquiagem de noiva: <strong>a partir de R$ 230</strong></p>
+            <p>Prévia de noiva: <strong>a partir de R$ 200 </strong></p>
           </div>
           <a className="btn primary" href={whatsappUrl} target="_blank" rel="noreferrer">
             Agendar pelo WhatsApp

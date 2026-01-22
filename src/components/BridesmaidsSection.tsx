@@ -19,7 +19,7 @@ function BridesmaidsSection({ whatsappUrl }: BridesmaidsSectionProps) {
         </div>
         <div className="card">
           <div className="price-list">
-            <p>Maquiagem para madrinhas: <strong>a partir de R$ 180</strong></p>
+            <p>Maquiagem para madrinhas: <strong>a partir de R$ 160</strong></p>
             <p>Pacotes para grupos: <strong>a partir de R$ 150 por pessoa</strong></p>
           </div>
           <a className="btn primary" href={whatsappUrl} target="_blank" rel="noreferrer">
