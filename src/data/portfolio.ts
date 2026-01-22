@@ -1,4 +1,5 @@
-﻿const createPlaceholder = (label: string) => {
+﻿import madrinha1 from '../assets/portfolio/madrinha1.png'
+const createPlaceholder = (label: string) => {
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="600" height="420">
       <defs>
@@ -44,7 +45,7 @@ export const portfolioItems = [
   },
   {
     id: "bridesmaid-1",
-    src: createPlaceholder("Madrinha 1"),
+    src: madrinha1,
     alt: "Maquiagem de madrinha com tons quentes",
     caption: "Madrinha | Tons quentes",
   },
