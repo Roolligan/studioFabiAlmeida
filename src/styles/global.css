@@ -115,18 +115,26 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px 24px;
+  gap: 8px;
+
+  padding: 12px 20px;   /* ⬅️ diminui a altura */
   border-radius: 999px;
+
   font-weight: 500;
+  font-size: 0.9rem;    /* ⬅️ fonte menor por padrão */
+  line-height: 1;       /* ⬅️ evita “inchar” o botão */
+
   border: 1px solid transparent;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-inline: auto;
 }
+
 
 .btn.primary {
   background: linear-gradient(135deg, var(--gold), #d9c29b);
   color: #2a1f14;
   box-shadow: 0 10px 24px rgba(179, 139, 71, 0.25);
+  
 }
 
 .btn.outline {
