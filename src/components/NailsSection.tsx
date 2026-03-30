@@ -19,10 +19,10 @@ function NailsSection({ whatsappUrl }: NailsSectionProps) {
         </div>
         <div className="card">
           <div className="price-list">
-            <p>Alongamento: <strong>a partir de R$ 90</strong></p>
-            <p>Manutenção até 22 dias: <strong>a partir de R$ 70</strong></p>
-            <p>Manutenção após 22 dias: <strong>a partir de R$ 90</strong></p>
-            <p>Banho de Gel: <strong>a partir de R$ 75</strong></p>
+            <p>Alongamento: <strong>a partir de R$ 120</strong></p>
+            <p>Manutenção até 22 dias: <strong>a partir de R$ 80</strong></p>
+            <p>Manutenção após 22 dias: <strong>a partir de R$ 120</strong></p>
+            <p>Banho de Gel: <strong>a partir de R$ 95</strong></p>
           </div>
           <a className="btn primary" href={whatsappUrl} target="_blank" rel="noreferrer">
             Consultar pelo WhatsApp
